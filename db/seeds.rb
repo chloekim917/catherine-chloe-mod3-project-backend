@@ -7,5 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Category.destroy_all
 
-Category.create(name: 'Food')
-Category.create(name: 'Utility')
+Category.create(name: 'Food', budget: 500)
+Category.create(name: 'Utility', budget: 200)
+
+Expenditure.create(detail: 'mcdonalds', category_id: 1, amount: 6.00)

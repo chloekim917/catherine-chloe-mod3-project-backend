@@ -3,7 +3,7 @@ class CreateExpenditures < ActiveRecord::Migration[6.0]
     create_table :expenditures do |t|
       t.string :date
       t.integer :category_id
-      t.string :detail
+      t.string :description
       t.float :amount
 
       t.timestamps
