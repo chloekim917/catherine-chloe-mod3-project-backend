@@ -6,8 +6,19 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Category.destroy_all
+Expenditure.destroy_all
 
-Category.create(name: 'Food', budget: 500)
-Category.create(name: 'Utility', budget: 200)
+Category.create(name: 'Food', budget_amount:0 )
+Category.create(name: 'Utility', budget_amount:0 )
+Category.create(name: 'Entertainment', budget_amount:0)
+Category.create(name: 'Housing', budget_amount:0)
+Category.create(name: 'Transportation', budget_amount:0)
+Category.create(name: 'Personal Care', budget_amount:0)
+Category.create(name: 'Gift', budget_amount:0)
+Category.create(name: 'Miscellaneous', budget_amount:0)
+Category.create(name: 'Travel', budget_amount:0)
+Category.create(name: 'Groceries', budget_amount:0)
+Category.create(name: 'Medical', budget_amount:0)
+Category.create(name: 'Pet Care', budget_amount:0)
 
-Expenditure.create(detail: 'mcdonalds', category_id: 1, amount: 6.00)
+
