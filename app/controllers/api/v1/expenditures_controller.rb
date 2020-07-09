@@ -33,6 +33,6 @@ class Api::V1::ExpendituresController < ApplicationController
     private
 
     def expenditure_params
-        params.require(:expenditure).permit(:date, :category_id, :detail, :amount)
+        params.require(:expenditure).permit(:date, :category_id, :description, :amount)
     end
 end
