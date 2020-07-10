@@ -1,5 +1,5 @@
 class ExpenditureSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :date, :description, :amount, :category
+  attributes :date, :detail, :amount, :category
   belongs_to :category
 end
