@@ -6,6 +6,13 @@ class Api::V1::ExpendituresController < ApplicationController
         render json: ExpenditureSerializer.new(expenditures)
     end
 
+    def by_date
+        date = params[:q]
+        expenditures = Expenditure.where(date: date)
+        # options = {include: :category}
+        render json: expenditures, include: :category
+    end
+
     def create
         expenditure = Expenditure.new(expenditure_params)
         expenditure.save!
