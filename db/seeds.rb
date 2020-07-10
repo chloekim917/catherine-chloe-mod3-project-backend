@@ -11,7 +11,7 @@ Expenditure.destroy_all
 food = Category.create(name: 'Food', budget_amount:155 )
 utility = Category.create(name: 'Utility', budget_amount:150 )
 entertainment = Category.create(name: 'Entertainment', budget_amount:175)
-housing = Category.create(name: 'Housing', budget_amount:1400)
+housing = Category.create(name: 'Housing', budget_amount:400)
 transportation = Category.create(name: 'Transportation', budget_amount:143)
 personal_care = Category.create(name: 'Personal Care', budget_amount:100)
 gift= Category.create(name: 'Gift', budget_amount:50)
