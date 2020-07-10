@@ -33,3 +33,4 @@ Expenditure.create(date: 20200701, category_id:transportation.id, description:"g
 Expenditure.create(date: 20200701, category_id:gift.id, description:"birthday gift", amount: 57.0)
 Expenditure.create(date: 20200701, category_id:misc.id, description:"etch a sketch", amount: 9.9)
 Expenditure.create(date: 20200701, category_id:medical.id, description:"doctor co-pay", amount: 41.0)
+Expenditure.create(date: 20200701, category_id:housing.id, description:"partial rent", amount: 410.0)
